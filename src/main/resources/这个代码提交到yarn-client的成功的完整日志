@@ -1,0 +1,333 @@
+[root@node1 opt]# spark-submit     --master yarn --deploy-mode client   --class bao.wc         ./sparkwordcount-1.0-SNAPSHOT.jar 3
+20/01/08 10:20:40 INFO spark.SparkContext: Running Spark version 1.6.0
+20/01/08 10:20:42 INFO spark.SecurityManager: Changing view acls to: root
+20/01/08 10:20:42 INFO spark.SecurityManager: Changing modify acls to: root
+20/01/08 10:20:42 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root); users with modify permissions: Set(root)
+20/01/08 10:20:42 INFO util.Utils: Successfully started service 'sparkDriver' on port 34968.
+20/01/08 10:20:43 INFO slf4j.Slf4jLogger: Slf4jLogger started
+20/01/08 10:20:43 INFO Remoting: Starting remoting
+20/01/08 10:20:44 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.217.5:34953]
+20/01/08 10:20:44 INFO Remoting: Remoting now listens on addresses: [akka.tcp://sparkDriverActorSystem@192.168.217.5:34953]
+20/01/08 10:20:44 INFO util.Utils: Successfully started service 'sparkDriverActorSystem' on port 34953.
+20/01/08 10:20:44 INFO spark.SparkEnv: Registering MapOutputTracker
+20/01/08 10:20:44 INFO spark.SparkEnv: Registering BlockManagerMaster
+20/01/08 10:20:44 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-6bfe9d6c-8f56-430f-bcb2-e5047a9148bd
+20/01/08 10:20:44 INFO storage.MemoryStore: MemoryStore started with capacity 534.5 MB
+20/01/08 10:20:44 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+20/01/08 10:20:45 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+20/01/08 10:20:45 INFO ui.SparkUI: Started SparkUI at http://192.168.217.5:4040
+20/01/08 10:20:45 INFO spark.SparkContext: Added JAR file:/opt/./sparkwordcount-1.0-SNAPSHOT.jar at spark://192.168.217.5:34968/jars/sparkwordcount-1.0-SNAPSHOT.jar with timestamp 1578450045646
+20/01/08 10:20:47 INFO client.ConfiguredRMFailoverProxyProvider: Failing over to rm202
+20/01/08 10:20:47 INFO yarn.Client: Requesting a new application from cluster with 3 NodeManagers
+20/01/08 10:20:47 INFO yarn.Client: Verifying our application has not requested more than the maximum memory capability of the cluster (1600 MB per container)
+20/01/08 10:20:47 INFO yarn.Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+20/01/08 10:20:47 INFO yarn.Client: Setting up container launch context for our AM
+20/01/08 10:20:47 INFO yarn.Client: Setting up the launch environment for our AM container
+20/01/08 10:20:47 INFO yarn.Client: Preparing resources for our AM container
+20/01/08 10:20:51 INFO yarn.Client: Uploading resource file:/tmp/spark-5f787ee8-99d9-4882-8fa9-6ac109840b31/__spark_conf__7971751409434794601.zip -> hdfs://node1:8020/user/root/.sparkStaging/applicatio
+n_1578449230085_0001/__spark_conf__7971751409434794601.zip20/01/08 10:20:53 INFO spark.SecurityManager: Changing view acls to: root
+20/01/08 10:20:53 INFO spark.SecurityManager: Changing modify acls to: root
+20/01/08 10:20:53 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root); users with modify permissions: Set(root)
+20/01/08 10:20:53 INFO yarn.Client: Submitting application 1 to ResourceManager
+20/01/08 10:20:53 INFO impl.YarnClientImpl: Submitted application application_1578449230085_0001
+20/01/08 10:20:54 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:20:54 INFO yarn.Client:
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: root.users.root
+	 start time: 1578450053224
+	 final status: UNDEFINED
+	 tracking URL: http://node2:8088/proxy/application_1578449230085_0001/
+	 user: root
+20/01/08 10:20:55 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:20:56 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:20:57 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:20:58 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:20:59 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:00 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:01 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:02 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:03 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:04 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:05 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:06 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:07 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:08 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:09 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:10 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:11 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:12 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:13 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:14 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:15 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:16 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:17 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:18 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:19 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:20 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:21 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:22 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:23 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:24 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:25 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:26 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:27 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:28 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:29 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:30 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:31 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:32 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:33 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:34 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:35 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:37 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:38 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:39 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:40 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:41 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:42 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:43 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:44 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:45 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:46 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:47 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:48 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:49 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:50 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:51 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:52 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:53 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:54 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:55 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:56 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:57 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:58 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:21:59 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:00 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:01 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:02 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:03 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:04 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:05 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:06 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:07 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:08 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:09 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:10 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:11 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:12 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:13 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:14 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:15 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:16 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:17 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:18 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:19 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:20 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:21 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:22 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:23 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:24 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:25 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:26 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:27 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:28 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:29 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:30 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:31 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:32 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:33 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:34 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:35 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:36 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:37 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:38 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:39 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:40 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:41 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:42 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:43 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:44 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:45 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:46 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:47 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:48 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:49 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:50 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:51 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:52 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:53 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:54 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:55 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:56 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:57 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:58 INFO cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(null)
+20/01/08 10:22:58 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:22:59 INFO cluster.YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> node1,node2, PROXY_URI_BASES -> http://node1:
+8088/proxy/application_1578449230085_0001,http://node2:8088/proxy/application_1578449230085_0001), /proxy/application_1578449230085_000120/01/08 10:22:59 INFO ui.JettyUtils: Adding filter: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+20/01/08 10:22:59 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:00 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:01 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:02 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:03 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:04 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:05 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:06 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:07 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:08 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:09 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:11 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:12 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:13 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:14 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:15 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:16 INFO yarn.Client: Application report for application_1578449230085_0001 (state: ACCEPTED)
+20/01/08 10:23:17 INFO yarn.Client: Application report for application_1578449230085_0001 (state: RUNNING)
+20/01/08 10:23:17 INFO yarn.Client:
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 192.168.217.5
+	 ApplicationMaster RPC port: 0
+	 queue: root.users.root
+	 start time: 1578450053224
+	 final status: UNDEFINED
+	 tracking URL: http://node2:8088/proxy/application_1578449230085_0001/
+	 user: root
+20/01/08 10:23:17 INFO cluster.YarnClientSchedulerBackend: Application application_1578449230085_0001 has started running.
+20/01/08 10:23:17 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40168.
+20/01/08 10:23:17 INFO netty.NettyBlockTransferService: Server created on 40168
+20/01/08 10:23:17 INFO storage.BlockManager: external shuffle service port = 7337
+20/01/08 10:23:17 INFO storage.BlockManagerMaster: Trying to register BlockManager
+20/01/08 10:23:17 INFO storage.BlockManagerMasterEndpoint: Registering block manager 192.168.217.5:40168 with 534.5 MB RAM, BlockManagerId(driver, 192.168.217.5, 40168)
+20/01/08 10:23:17 INFO storage.BlockManagerMaster: Registered BlockManager
+20/01/08 10:23:18 INFO scheduler.EventLoggingListener: Logging events to hdfs://node1:8020/user/spark/applicationHistory/application_1578449230085_0001
+20/01/08 10:23:18 INFO spark.SparkContext: Registered listener com.cloudera.spark.lineage.ClouderaNavigatorListener
+20/01/08 10:23:18 INFO cluster.YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+20/01/08 10:23:19 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 308.1 KB, free 534.2 MB)
+20/01/08 10:23:20 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 26.4 KB, free 534.2 MB)
+20/01/08 10:23:20 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.217.5:40168 (size: 26.4 KB, free: 534.5 MB)
+20/01/08 10:23:20 INFO spark.SparkContext: Created broadcast 0 from textFile at wc.java:24
+20/01/08 10:23:20 INFO mapred.FileInputFormat: Total input paths to process : 1
+20/01/08 10:23:20 INFO spark.SparkContext: Starting job: sortByKey at wc.java:59
+20/01/08 10:23:20 INFO scheduler.DAGScheduler: Registering RDD 3 (mapToPair at wc.java:36)
+20/01/08 10:23:20 INFO scheduler.DAGScheduler: Got job 0 (sortByKey at wc.java:59) with 2 output partitions
+20/01/08 10:23:20 INFO scheduler.DAGScheduler: Final stage: ResultStage 1 (sortByKey at wc.java:59)
+20/01/08 10:23:20 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+20/01/08 10:23:20 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+20/01/08 10:23:20 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at mapToPair at wc.java:36), which has no missing parents
+20/01/08 10:23:21 INFO storage.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.7 KB, free 534.2 MB)
+20/01/08 10:23:21 INFO storage.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.6 KB, free 534.2 MB)
+20/01/08 10:23:21 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.217.5:40168 (size: 2.6 KB, free: 534.5 MB)
+20/01/08 10:23:21 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1004
+20/01/08 10:23:21 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at mapToPair at wc.java:36) (first 15 tasks are for partitions Vector(0, 1))
+20/01/08 10:23:21 INFO cluster.YarnScheduler: Adding task set 0.0 with 2 tasks
+20/01/08 10:23:22 INFO spark.ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 1)
+20/01/08 10:23:24 INFO spark.ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 2)
+20/01/08 10:23:36 WARN cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+20/01/08 10:23:48 INFO cluster.YarnClientSchedulerBackend: Registered executor NettyRpcEndpointRef(null) (node3:37746) with ID 2
+20/01/08 10:23:48 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, node3, executor 2, partition 0, NODE_LOCAL, 2199 bytes)
+20/01/08 10:23:48 INFO spark.ExecutorAllocationManager: New executor 2 has registered (new total is 1)
+20/01/08 10:23:48 INFO storage.BlockManagerMasterEndpoint: Registering block manager node3:45267 with 534.5 MB RAM, BlockManagerId(2, node3, 45267)
+20/01/08 10:23:49 INFO cluster.YarnClientSchedulerBackend: Registered executor NettyRpcEndpointRef(null) (node2:38160) with ID 1
+20/01/08 10:23:49 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, node2, executor 1, partition 1, NODE_LOCAL, 2199 bytes)
+20/01/08 10:23:49 INFO spark.ExecutorAllocationManager: New executor 1 has registered (new total is 2)
+20/01/08 10:23:49 INFO storage.BlockManagerMasterEndpoint: Registering block manager node2:40568 with 534.5 MB RAM, BlockManagerId(1, node2, 40568)
+20/01/08 10:23:53 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on node3:45267 (size: 2.6 KB, free: 534.5 MB)
+20/01/08 10:23:55 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on node3:45267 (size: 26.4 KB, free: 534.5 MB)
+20/01/08 10:23:57 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on node2:40568 (size: 2.6 KB, free: 534.5 MB)
+20/01/08 10:23:58 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on node2:40568 (size: 26.4 KB, free: 534.5 MB)
+20/01/08 10:23:59 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 10973 ms on node3 (executor 2) (1/2)
+20/01/08 10:24:03 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 13924 ms on node2 (executor 1) (2/2)
+20/01/08 10:24:03 INFO cluster.YarnScheduler: Removed TaskSet 0.0, whose tasks have all completed, from pool
+20/01/08 10:24:03 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (mapToPair at wc.java:36) finished in 41.930 s
+20/01/08 10:24:03 INFO scheduler.DAGScheduler: looking for newly runnable stages
+20/01/08 10:24:03 INFO scheduler.DAGScheduler: running: Set()
+20/01/08 10:24:03 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 1)
+20/01/08 10:24:03 INFO scheduler.DAGScheduler: failed: Set()
+20/01/08 10:24:03 INFO scheduler.DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[7] at sortByKey at wc.java:59), which has no missing parents
+20/01/08 10:24:03 INFO storage.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 3.9 KB, free 534.2 MB)
+20/01/08 10:24:03 INFO storage.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.2 KB, free 534.2 MB)
+20/01/08 10:24:03 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.217.5:40168 (size: 2.2 KB, free: 534.5 MB)
+20/01/08 10:24:03 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1004
+20/01/08 10:24:03 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[7] at sortByKey at wc.java:59) (first 15 tasks are for partitions Vector(0, 1))
+20/01/08 10:24:03 INFO cluster.YarnScheduler: Adding task set 1.0 with 2 tasks
+20/01/08 10:24:03 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, node3, executor 2, partition 0, NODE_LOCAL, 1968 bytes)
+20/01/08 10:24:03 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, node2, executor 1, partition 1, NODE_LOCAL, 1968 bytes)
+20/01/08 10:24:03 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on node3:45267 (size: 2.2 KB, free: 534.5 MB)
+20/01/08 10:24:03 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on node2:40568 (size: 2.2 KB, free: 534.5 MB)
+20/01/08 10:24:03 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to node3:37746
+20/01/08 10:24:03 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 152 bytes
+20/01/08 10:24:03 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to node2:38160
+20/01/08 10:24:03 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 278 ms on node3 (executor 2) (1/2)
+20/01/08 10:24:03 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 360 ms on node2 (executor 1) (2/2)
+20/01/08 10:24:03 INFO cluster.YarnScheduler: Removed TaskSet 1.0, whose tasks have all completed, from pool
+20/01/08 10:24:03 INFO scheduler.DAGScheduler: ResultStage 1 (sortByKey at wc.java:59) finished in 0.363 s
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Job 0 finished: sortByKey at wc.java:59, took 43.200125 s
+20/01/08 10:24:04 INFO Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+20/01/08 10:24:04 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+20/01/08 10:24:04 INFO Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+20/01/08 10:24:04 INFO Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+20/01/08 10:24:04 INFO Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+20/01/08 10:24:04 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+20/01/08 10:24:04 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+20/01/08 10:24:04 INFO spark.SparkContext: Starting job: saveAsTextFile at wc.java:76
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Registering RDD 5 (mapToPair at wc.java:51)
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Got job 1 (saveAsTextFile at wc.java:76) with 2 output partitions
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Final stage: ResultStage 4 (saveAsTextFile at wc.java:76)
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 3)
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 3)
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[5] at mapToPair at wc.java:51), which has no missing parents
+20/01/08 10:24:04 INFO storage.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 4.0 KB, free 534.2 MB)
+20/01/08 10:24:04 INFO storage.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.3 KB, free 534.2 MB)
+20/01/08 10:24:04 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.217.5:40168 (size: 2.3 KB, free: 534.5 MB)
+20/01/08 10:24:04 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1004
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[5] at mapToPair at wc.java:51) (first 15 tasks are for partitions Vector(0, 1))
+20/01/08 10:24:04 INFO cluster.YarnScheduler: Adding task set 3.0 with 2 tasks
+20/01/08 10:24:04 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.0 (TID 4, node3, executor 2, partition 0, NODE_LOCAL, 1957 bytes)
+20/01/08 10:24:04 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.0 (TID 5, node2, executor 1, partition 1, NODE_LOCAL, 1957 bytes)
+20/01/08 10:24:04 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on node3:45267 (size: 2.3 KB, free: 534.5 MB)
+20/01/08 10:24:04 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on node2:40568 (size: 2.3 KB, free: 534.5 MB)
+20/01/08 10:24:04 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 3.0 (TID 4) in 182 ms on node3 (executor 2) (1/2)
+20/01/08 10:24:04 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 3.0 (TID 5) in 194 ms on node2 (executor 1) (2/2)
+20/01/08 10:24:04 INFO cluster.YarnScheduler: Removed TaskSet 3.0, whose tasks have all completed, from pool
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (mapToPair at wc.java:51) finished in 0.201 s
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: looking for newly runnable stages
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: running: Set()
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 4)
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: failed: Set()
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[10] at saveAsTextFile at wc.java:76), which has no missing parents
+20/01/08 10:24:04 INFO storage.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 82.7 KB, free 534.1 MB)
+20/01/08 10:24:04 INFO storage.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 29.8 KB, free 534.1 MB)
+20/01/08 10:24:04 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.168.217.5:40168 (size: 29.8 KB, free: 534.5 MB)
+20/01/08 10:24:04 INFO spark.SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1004
+20/01/08 10:24:04 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 4 (MapPartitionsRDD[10] at saveAsTextFile at wc.java:76) (first 15 tasks are for partitions Vector(0, 1))
+20/01/08 10:24:04 INFO cluster.YarnScheduler: Adding task set 4.0 with 2 tasks
+20/01/08 10:24:04 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 4.0 (TID 6, node2, executor 1, partition 0, NODE_LOCAL, 1968 bytes)
+20/01/08 10:24:04 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 4.0 (TID 7, node3, executor 2, partition 1, NODE_LOCAL, 1968 bytes)
+20/01/08 10:24:04 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on node3:45267 (size: 29.8 KB, free: 534.5 MB)
+20/01/08 10:24:04 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on node2:40568 (size: 29.8 KB, free: 534.5 MB)
+20/01/08 10:24:04 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to node3:37746
+20/01/08 10:24:04 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 1 is 152 bytes
+20/01/08 10:24:04 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to node2:38160
+20/01/08 10:24:06 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 4.0 (TID 6) in 1680 ms on node2 (executor 1) (1/2)
+20/01/08 10:24:06 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 4.0 (TID 7) in 1964 ms on node3 (executor 2) (2/2)
+20/01/08 10:24:06 INFO cluster.YarnScheduler: Removed TaskSet 4.0, whose tasks have all completed, from pool
+20/01/08 10:24:06 INFO scheduler.DAGScheduler: ResultStage 4 (saveAsTextFile at wc.java:76) finished in 1.965 s
+20/01/08 10:24:06 INFO scheduler.DAGScheduler: Job 1 finished: saveAsTextFile at wc.java:76, took 2.344205 s
+20/01/08 10:24:06 INFO ui.SparkUI: Stopped Spark web UI at http://192.168.217.5:4040
+20/01/08 10:24:07 INFO cluster.YarnClientSchedulerBackend: Interrupting monitor thread
+20/01/08 10:24:07 INFO cluster.YarnClientSchedulerBackend: Shutting down all executors
+20/01/08 10:24:07 INFO cluster.YarnClientSchedulerBackend: Asking each executor to shut down
+20/01/08 10:24:07 INFO cluster.YarnClientSchedulerBackend: Stopped
+20/01/08 10:24:07 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+20/01/08 10:24:07 INFO storage.MemoryStore: MemoryStore cleared
+20/01/08 10:24:07 INFO storage.BlockManager: BlockManager stopped
+20/01/08 10:24:07 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+20/01/08 10:24:07 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+20/01/08 10:24:07 INFO spark.SparkContext: Successfully stopped SparkContext
+20/01/08 10:24:07 INFO remote.RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+20/01/08 10:24:07 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+20/01/08 10:24:07 INFO util.ShutdownHookManager: Shutdown hook called
+20/01/08 10:24:07 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-5f787ee8-99d9-4882-8fa9-6ac109840b31
